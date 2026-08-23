@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hachihi PC Check - Hướng Dẫn Tải & Sử Dụng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --warning-bg: #fef3c7;
+            --warning-border: #f59e0b;
+            --warning-text: #92400e;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 40px 30px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        .cta-section {
+            text-align: center;
+            background: #eff6ff;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            border: 1px solid #bfdbfe;
+        }
+
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+        }
+
+        .btn-download:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+        }
+
+        .cta-note {
+            margin-top: 12px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .step-list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .step-card {
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            position: relative;
+        }
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: bold;
+            border-radius: 50%;
+            margin-bottom: 12px;
+        }
+
+        .step-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .step-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .step-content li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 8px;
+        }
+
+        .step-content li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 8px;
+            top: -2px;
+        }
+
+        .warning-box {
+            background-color: var(--warning-bg);
+            border-left: 4px solid var(--warning-border);
+            color: var(--warning-text);
+            padding: 16px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 15px;
+            font-size: 0.95rem;
+        }
+
+        .security-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #059669;
+            background-color: #ecfdf5;
+            padding: 10px 16px;
+            border-radius: 6px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+            header h1 {
+                font-size: 1.6rem;
+            }
+            .btn-download {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1><i class="fa-solid fa-laptop-code"></i> Hachihi PC Check</h1>
+            <p>Công cụ kiểm tra cấu hình & tư vấn giải pháp bản quyền phần mềm</p>
+        </header>
+
+        <!-- Nút tải chính -->
+        <div class="cta-section">
+            <a href="https://github.com/haihoanggmail/pccheck/releases/latest/download/pccheck_kh.exe" class="btn-download">
+                <i class="fa-solid fa-download"></i> Tải Phần Mềm Kiểm Tra (pccheck_kh.exe)
+            </a>
+            <p class="cta-note"><i class="fa-solid fa-shield-halved"></i> Phiên bản mới nhất • Tự động cập nhật • Miễn phí</p>
+        </div>
+
+        <div class="step-list">
+            <!-- Bước 1 -->
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <div class="step-title">Tải phần mềm về máy tính</div>
+                <div class="step-content">
+                    <ul>
+                        <li>Bấm vào nút <strong>Tải Phần Mềm Kiểm Tra</strong> ở trên.</li>
+                        <li>File <code>pccheck_kh.exe</code> sẽ tự động được lưu vào thư mục <strong>Downloads</strong> trên máy tính của bạn.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bước 2 -->
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <div class="step-title">Mở ứng dụng (Xử lý nếu bị Windows chặn)</div>
+                <div class="step-content">
+                    <p>Nhấp đúp chuột vào file <code>pccheck_kh.exe</code> để mở. Nếu màn hình xanh <strong>"Windows protected your PC"</strong> (SmartScreen) xuất hiện:</p>
+                    
+                    <div class="warning-box">
+                        <p><strong><i class="fa-solid fa-triangle-exclamation"></i> Hướng dẫn bỏ qua cảnh báo:</strong></p>
+                        <ol style="margin-left: 20px; margin-top: 8px;">
+                            <li>Bấm vào dòng chữ <strong>More info</strong> (Thông tin thêm).</li>
+                            <li>Bấm nút <strong>Run anyway</strong> (Vẫn tiếp tục chạy) xuất hiện ở góc dưới.</li>
+                        </ol>
+                    </div>
+
+                    <div class="security-badge">
+                        <i class="fa-solid fa-lock"></i> Cam kết: App chỉ quét thông số kỹ thuật (CPU, RAM, OS), không thu thập tệp tin hay mật khẩu cá nhân.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bước 3 -->
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <div class="step-title">Gửi cấu hình nhận tư vấn</div>
+                <div class="step-content">
+                    <ul>
+                        <li>Tại giao diện ứng dụng, nhấn nút <strong>Kiểm tra cấu hình</strong>.</li>
+                        <li>Xem danh sách phần cứng & phần mềm được hiển thị.</li>
+                        <li>Điền tên hoặc Số điện thoại/Zalo liên hệ (nếu có) và nhấn <strong>Gửi thông tin cho Hachihi</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© Hachihi Software Solution. Hỗ trợ kỹ thuật & Bản quyền phần mềm.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
