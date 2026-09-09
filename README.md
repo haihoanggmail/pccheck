@@ -1,3 +1,5 @@
+
+<img src="logo9.jpg" alt="Hachihi Logo" width="120" />
 DOANH NGHIỆP CÓ THỂ ĐANG DÙNG WINDOWS & PHẦN MỀM MỖI NGÀY… NHƯNG CHƯA BIẾT MÌNH ĐANG DÙNG ĐÚNG KHÔNG?
 
 Máy tính vẫn chạy.
